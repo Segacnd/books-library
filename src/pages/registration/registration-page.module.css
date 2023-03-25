@@ -1,0 +1,56 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.root button {
+  margin-top: 16px;
+}
+
+.root h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+}
+
+.root h5 {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+
+.root a {
+  margin-left: 12px;
+}
+
+.redirectWrapper {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.redirectLink {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #363636;
+}
+
+@media screen and (max-width: 400px) {
+  .redirectWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .root a {
+    margin-left: 0;
+  }
+}

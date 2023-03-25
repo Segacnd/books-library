@@ -1,0 +1,112 @@
+.root {
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: var(--default-boxshadow), 0px 1px 5px rgba(191, 196, 201, 0.24);
+}
+
+.root button {
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  user-select: none;
+}
+
+.pickerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 51px;
+  position: relative;
+}
+
+.monthList {
+  position: absolute;
+  top: 30px;
+  left: -6px;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 4px 28px 8px 8px;
+  height: 150px;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 0px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+}
+
+.monthList p {
+  cursor: pointer;
+  margin-block: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #a7a7a7;
+}
+
+.monthList .activeMonth {
+  color: #ff5253;
+}
+
+.monthChangerButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.selectMonth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.selectMonth span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #a7a7a7;
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.days {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(167, 167, 167);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.weekDays {
+  font-weight: 500;
+  cursor: auto;
+  color: #f83600;
+}
+
+.currentDay {
+  color: rgb(248, 54, 0);
+}
+
+.yesterday {
+  color: rgb(54, 54, 54);
+}
+
+.activeDay {
+  color: #ffffff;
+  background: linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+}
+
+.weekendDay {
+  background-color: rgb(254, 235, 234);
+}

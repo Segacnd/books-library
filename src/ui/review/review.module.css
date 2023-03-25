@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.userInfoWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.imgWrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userName {
+  text-transform: capitalize;
+}
+
+.root p {
+  width: fit-content;
+}
+
+.title {
+  display: flex;
+  gap: 24px;
+}
+@media screen and (max-width: 320px) {
+  .userInfoWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}

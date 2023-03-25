@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  width: 80%;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .root {
+    width: 90%;
+  }
+}

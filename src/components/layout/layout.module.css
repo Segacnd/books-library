@@ -1,0 +1,46 @@
+main {
+  min-height: 67.7vh;
+  padding-top: 47px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #bfc4c9;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 48px;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  footer {
+    gap: 16px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  main {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  footer > div:first-child {
+    width: 180px;
+  }
+}

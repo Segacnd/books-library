@@ -1,0 +1,97 @@
+.root {
+  position: relative;
+  border-bottom: 1px solid #bfc4c9;
+  margin-bottom: 2px;
+  margin-top: 16px;
+  width: fit-content;
+  background: #f9f9fa;
+  width: 100%;
+}
+
+.root input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #363636;
+  background: transparent;
+  border: none;
+  padding: 26px 12px 12px 12px;
+  width: 100%;
+  outline: none;
+  z-index: 2;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left: 12px;
+  top: 19px;
+  transition: ease-in-out 0.3s;
+  z-index: 1;
+}
+
+.active {
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  transition: ease-in-out 0.3s;
+  color: #a7a7a7;
+}
+
+.showHidePass {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.errorBorder {
+  border-bottom: 1px solid #f42c4f;
+}
+
+.errorMessage {
+  color: #f42c4f;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 12px;
+  letter-spacing: 0.2px;
+}
+
+.simplyErrorMessage {
+  color: #f42c4f;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+
+.infoMessage {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #727272;
+  width: 410px;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .infoMessage,
+  .errorMessage,
+  .simplyErrorMessage {
+    width: 356px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .infoMessage,
+  .errorMessage,
+  .simplyErrorMessage {
+    width: 286px;
+  }
+}

@@ -1,0 +1,59 @@
+.alertWrapper {
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  right: 10%;
+  border-radius: 5px;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1vw;
+  padding: 2vw;
+  z-index: 5;
+}
+
+.errorWrapper {
+  background: #feebea;
+  border: 1.5px solid #f42c4f;
+}
+
+.succesWrapper {
+  background: #ebf9f1;
+  border: 1.5px solid #00ca71;
+}
+
+.alertTitle {
+  flex: 1;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #363636;
+  vertical-align: middle;
+}
+
+.alertWrapper button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.alertHidden {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .alertTitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .alertWrapper svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .alertWrapper {
+    align-items: flex-start;
+  }
+}

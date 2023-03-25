@@ -1,0 +1,44 @@
+.root {
+  padding: 4px;
+  height: 518px;
+}
+
+.root div:has(.swiper-pagination) {
+  opacity: 1;
+}
+
+.root :global(.swiper-pagination.swiper-pagination-horizontal) {
+  opacity: 1;
+  padding: 4px;
+  bottom: 0px;
+}
+
+.swiperWrapper {
+  margin-inline: auto;
+}
+
+.swiperWrapper :global(.swiper-slide .orderButtonWrapper) {
+  width: 100%;
+}
+
+@media screen and (max-width: 1160px) {
+  .root {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .swiperWrapper :global(.swiper-slide) {
+    max-width: 190px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .swiperWrapper {
+    overflow-x: scroll;
+  }
+
+  .swiperWrapper :global(.swiper-slide) {
+    min-width: 288px;
+  }
+}

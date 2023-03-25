@@ -1,0 +1,76 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.editButton {
+  margin-top: 22px;
+  padding: 14px 29px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #bfc4c9;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  height: 100%;
+  color: #363636;
+  width: 255px;
+}
+
+.submitButton {
+  margin-top: auto;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  background: var(--active-clr-bg);
+  border-radius: 30px;
+  height: 100%;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  width: 255px;
+  color: rgb(255, 255, 255);
+}
+
+.submitButton:disabled {
+  background: rgb(235, 235, 235);
+  color: #bfc4c9;
+}
+
+.inputWrapper {
+  width: 47%;
+}
+
+.inputWrapper:nth-of-type(2n + 2) {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .inputWrapper {
+    width: 100%;
+  }
+
+  .editButton {
+    margin-top: 32px;
+  }
+
+  .submitButton,
+  .editButton {
+    width: 100%;
+  }
+}

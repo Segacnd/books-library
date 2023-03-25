@@ -1,0 +1,29 @@
+.hidden {
+  display: none;
+}
+
+.showModal {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 32px 24px;
+  gap: 32px;
+  box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+  background-color: #ffffff;
+  z-index: 1;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.showModal button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}

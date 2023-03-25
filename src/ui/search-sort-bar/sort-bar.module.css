@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 30px;
+  box-shadow: var(--default-boxshadow);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #a7a7a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.root:active {
+  box-shadow: var(--pressed-boxshadow-btn);
+}
+
+@media screen and (max-width: 500px) {
+  .root {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sortInput {
+    display: none;
+  }
+}

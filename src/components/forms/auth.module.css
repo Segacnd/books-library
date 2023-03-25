@@ -1,0 +1,43 @@
+.passWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.passWrapper,
+.loginWrapper {
+  position: relative;
+}
+
+.incorrectLogin input {
+  border-bottom: 1px solid #f42c4f;
+}
+
+.errorText {
+  margin-left: 12px;
+  color: #f42c4f;
+  font-weight: 600;
+}
+
+.redirectLink {
+  color: #363636;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.redirectToForgot {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a7a7a7;
+}
+
+.supportText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #a7a7a7;
+}

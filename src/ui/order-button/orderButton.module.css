@@ -1,0 +1,64 @@
+.button {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  background: var(--active-clr-bg);
+  border-radius: 20px;
+  height: 100%;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.button:active {
+  background: var(--active-clr-bg);
+  box-shadow: var(--pressed-boxshadow-btn);
+}
+
+.notMeOrder {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 100%;
+  background: #f9f9fa;
+  border: 1px solid #bfc4c9;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: rgb(167, 167, 167);
+}
+
+.isMeOrder {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #f9f9fa;
+  border: 1px solid #bfc4c9;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  height: 100%;
+  color: #363636;
+}
+
+.isMeOrder:active,
+.notMeOrder:active {
+  background: #f9f9fa;
+  color: rgb(167, 167, 167);
+}
